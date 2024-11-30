@@ -1,0 +1,23 @@
+##
+# Configuration file for EditorConfig,
+# an extension helps maintain consistent coding styles for multiple
+# developers working on the same project across various editors and
+# IDEs. Documentations: https://EditorConfig.org
+####################################################################
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[{*.go,Makefile,GNUmakefile}]
+indent_style = tab
+
+[*.{md,markdown,yaml,yml,json}]
+indent_size = 2
