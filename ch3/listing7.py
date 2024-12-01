@@ -10,3 +10,7 @@ class User(BaseModel):
     @classmethod
     def create_dummy(cls):
         return cls(name="John Doe", age=33, email="john.doe@exmaple.com")
+
+
+dummy_user = User.create_dummy()
+print(dummy_user)
